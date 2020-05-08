@@ -1,0 +1,247 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--violeta);
+  font-weight: 700px;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --white: white;
+  --wrapper-background-image: url('../images/bg-mobile.svg');
+  --wrapper-max-width: 375px;
+  --wrapper-padding: 36px;
+  --page-logo-margin: 50px;
+  --page-logo-img-width: 125px;
+  --page-img-margin-bottom: 55px;
+  --page-title-font-size: 1.4em;
+  --page-title-font-weight: 700;
+  --page-title-line-height: 1.65;
+  --page-title-margin-bottom: 10px;
+  --page-text-font-size: 1em;
+  --page-text-line-height: 1.5;
+  --page-text-margin-bottom: 20px;
+  --page-btn-width: 200px;
+  --page-btn-height: 40px;
+  --page-btn-border-radius: 20px;
+  --page-btn-font-size: .7em;
+  --page-btn-hover-font-size: 1em;
+  --page-btn-box-shadow: 0 5px 10px 0 rgba(80, 59, 134, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.text-violet {
+  color: var(--violet);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.violet {
+  background: var(--violet);
+}
+
+.white {
+  background: var(--white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrapper {
+  background-image: var(--wrapper-background-image);
+  background-repeat: no-repeat;
+  max-width: var(--wrapper-max-width);
+  margin: 0 auto;
+  padding: var(--wrapper-padding);
+}
+
+.page-logo {
+  margin-top: 0;
+  margin-bottom: var(--page-logo-margin);
+}
+
+.page-logo img {
+  width: var(--page-logo-img-width);
+}
+
+.page-img {
+  margin-bottom: var(--page-img-margin-bottom);
+}
+
+.page-img img {
+  width: 100%;
+}
+
+.page-title {
+  font-size: var(--page-title-font-size);
+  font-weight: var(--page-title-font-weight);
+  line-height: var(--page-title-line-height);
+  margin-bottom: var(--page-title-margin-bottom);
+}
+
+.page-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--page-text-font-size);
+  line-height: var(--page-text-line-height);
+  margin-bottom: var(--page-text-margin-bottom);
+}
+
+.page-btn {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: var(--page-btn-width);
+  height: var(--page-btn-height);
+  border-radius: var(--page-btn-border-radius);
+  font-size: var(--page-btn-font-size);
+
+  color: var(--white);
+  background: var(--violet);
+  border: 1px solid var(--white);
+  transition: .2s;
+  margin-bottom: 60px;
+}
+
+.page-btn:hover {
+  box-shadow: var(--page-btn-box-shadow);
+  color: var(--violet);
+  background: var(--white);
+  transition: .2s;
+}
+
+.page-social-icons {
+  display: flex;
+  padding: 0;
+  width: 117px;
+  margin: auto;
+
+}
+
+.page-social-icons li {
+  display: block;
+  align-content: center;
+  list-style-type: none;
+
+}
+
+.page-social-icons a {
+
+  border: 1px solid var(--white);
+  display: flex;
+  width: 27px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 5px;
+
+  font-size: 15px;
+  color: var(--white);
+  transition: .2s;
+
+}
+
+.page-social-icons a:hover {
+  box-shadow: var(--page-btn-box-shadow);
+  color: var(--violet);
+  background: var(--white);
+  transition: .2s;
+}
+
+.attribution {
+  font-style: italic;
+}
+
+.attribution a {
+  color: var(--white);
+  font-style: italic;
+  transition: .3s;
+}
+
+.attribution a:hover {
+  transition: .3s;
+  color: black;
+  font-style: italic;
+}
+
+@media screen and (min-width: 1440px) {
+
+  :root {
+    --wrapper-background-image: url('../images/bg-desktop.svg');
+    --wrapper-max-width: 1440px;
+    --wrapper-padding: 72px;
+    --page-logo-margin: 85px;
+    --page-logo-img-width: 210px;
+    --page-img-margin-bottom: 0;
+
+    --page-title-font-size: 2.5em;
+    --page-title-margin-bottom: 15px;
+    --page-text-font-size: 1.15em;
+    --page-text-margin-bottom: 30px;
+    --page-btn-width: 200px;
+    --page-btn-height: 60px;
+    --page-btn-border-radius: 30px;
+    --page-btn-font-size: 1.1em;
+
+
+
+
+
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 525px;
+    grid-gap: 50px
+  }
+
+  .wrapper {
+    border: 1px solid #000;
+  }
+
+  .page-logo {
+    display: block;
+    margin-top: -20px;
+  }
+
+  .text-center {
+    text-align: left
+  }
+
+  .page-btn {
+    margin: 0;
+  }
+
+  .page-social-icons {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+
+  }
+
+  .page-social-icons a {
+    border: 1px solid var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--white);
+    transition: .2s;
+  }
+}
