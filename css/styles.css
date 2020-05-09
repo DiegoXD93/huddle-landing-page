@@ -210,10 +210,6 @@ a {
     grid-gap: 50px
   }
 
-  .wrapper {
-    border: 1px solid #000;
-  }
-
   .page-logo {
     display: block;
     margin-top: -20px;
